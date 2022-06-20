@@ -9,6 +9,7 @@ export const Container = styled.div`
   padding: 1rem;
   padding-top: 2rem;
 
+
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -17,6 +18,11 @@ export const Container = styled.div`
     grid-row-gap: 0.5rem;
   }
 `;
+
+export const Span = styled.span`
+  font-size: 2rem;
+`;
+
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
