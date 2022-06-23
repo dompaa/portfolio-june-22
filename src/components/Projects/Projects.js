@@ -4,9 +4,33 @@ import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag,
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
+const projectsDemo = [{
+  title: 'Project 1',
+  description: 'This is a description for javascript project.'
+},{
+  title: 'Project 2',
+  description: 'This is a description for javascript project.'
+},{
+  title: 'Project 3',
+  description: 'This is a description for javascript project.'
+},{
+  title: 'Project 4',
+  description: 'This is a description for javascript project.'
+}];
+
 const Projects = () => (
   <Section nopadding id="projects">
-
+    <SectionDivider />
+      <SectionTitle main>Projects</SectionTitle>
+      <GridContainer>
+        {projectsDemo.map((project) => (
+          <div>
+            {project.title}
+            <br/>
+            {project.description}
+          </div>
+        ))}
+      </GridContainer>
   </Section>
 );
 
